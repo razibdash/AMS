@@ -9,12 +9,10 @@
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://i0.wp.com/www.socialtoaster.com/wp-content/uploads/2022/07/072122-BlogPost-e1658514459203.jpg?fit=800%2C419&ssl=1" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://media.licdn.com/dms/image/C4D12AQFxKbjr-E1V8Q/article-cover_image-shrink_720_1280/0/1520186441945?e=2147483647&v=beta&t=rqXL0t3zVf4upMcm-cmwogF7-K93Qy4Q3f_Mc2Xi0Ys" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3pewnnkMG7FgQwy6RC7jJOXDIZjasjiuOJ-as6RBcAew6pyv_hs_tNO75I-JhgoCxfMs&usqp=CAU" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://media.licdn.com/dms/image/C5112AQH3JU0_-PsNSQ/article-cover_image-shrink_600_2000/0/1584947950531?e=2147483647&v=beta&t=oaoI3bo8cDn4Luhfz6QaAf-OgOYsjjHk7FOvaa3XBFc" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
