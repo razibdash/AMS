@@ -612,15 +612,18 @@
 /***** End Display Break Class *****/
 
 
-/* up coming sectin style */
+/* up coming section style start*/
 .upcomingEvent {
     background-color: #DFF6FF;
     padding: 20px;
   }
-.eventCard.container {
+.eventCard.container{
     display: flex;
-    gap: 11px;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
   }
-/* up coming sectin style */
+/* up coming section style end*/
