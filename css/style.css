@@ -641,3 +641,18 @@
   flex-wrap: wrap;
   }
 /* GALLARY SECTION */
+
+/* JOB SECTION STYLE START */
+.Job-section {
+    background-color: #FFF7E9;
+}
+.job-card{
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+      flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+/* JOB SECTION STYLE END */
