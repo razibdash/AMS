@@ -1,12 +1,12 @@
 <?php
 require_once("header.php");
 ?>
-<div class="job-section">
+<div class="job-section p-5 bg-[#DFF6FF]">
       <div class="heading-job max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
             <div class="alumni-list-text">
-                <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">Posted Jobs</h1>
+                <h1 class="mb-2 mt-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">Posted Jobs</h1>
             </div>
-            <div class="search-job">   
+            <div class="search-job mt-5">   
                 <form class="max-w-md mx-auto md:w-auto">   
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
@@ -23,7 +23,7 @@ require_once("header.php");
             </div>
         </div>
         <!-- Job search section end -->
-        <div class="job-card shadow-2xl bg-white rounded-lg mb-2 max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+        <div class="job-card m-5 shadow-2xl bg-white rounded-lg mb-5 max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
             <!-- job ONE -->
             <div class="max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
