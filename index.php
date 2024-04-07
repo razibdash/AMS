@@ -216,3 +216,5 @@ require_once("slider.php");
     ?>
 </div>
 <!-- FOOTER SECTION END -->
+</body>
+</html>
