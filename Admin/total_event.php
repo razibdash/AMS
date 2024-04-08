@@ -93,7 +93,7 @@
                  <?php echo $date ?>
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remove</a>
+                    <a href="../php_core/deleteEvent.php?del=<?php echo $id;?>" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remove</a>
                 </td>
                </tr>
           <?php

@@ -17,6 +17,7 @@
     </div>
     <div class="eventCard container">
         <?php
+        $count=0;
         $readData = "SELECT * FROM `events`";
         $query=mysqli_query($connect,$readData);
         while($data = mysqli_fetch_assoc($query)){
@@ -24,7 +25,8 @@
             $photo=$data['photo'];
             $des=$data['des'];
             $date=$data['date'];
-
+            $count++;
+           
         ?>
             <div class=" mb-8 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
@@ -44,7 +46,10 @@
                     </p>
                 </div>
             </div>
-        <?php 
+        <?php
+         if($count==2){
+            break;
+        } 
       }
         ?>
 
