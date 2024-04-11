@@ -656,3 +656,10 @@
     margin: 10px;
 }
 /* JOB SECTION STYLE END */
+.add-photo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: aliceblue;
+  }
