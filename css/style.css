@@ -663,3 +663,15 @@
     align-items: center;
     background-color: aliceblue;
   }
+
+
+  /* this is admin dashboard section start */
+  .card-section{}
+  .card-section .event-card{
+    width: 200px;
+    background-color: aqua;
+  }
+  .card-section .alumni-card{}
+  .card-section .jobs-card{}
+  .card-section .gallery-card{}
+  /* this is admin dashboard section END */
