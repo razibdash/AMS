@@ -13,7 +13,7 @@
             <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Alumni</span>Login</h1>
 
               <form class="max-w-sm mx-auto" action="" method="">
-              <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+              <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Student ID</label>
               <div class="relative">
                   <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                     <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -21,7 +21,7 @@
                       <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                     </svg>
                   </div>
-                  <input type="email" name="email" id="email" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@gmail.com" required>
+                  <input type="text" name="username" id="email" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="jonh deo" required>
                 </div>
 
                 <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
@@ -34,9 +34,11 @@
                   </div>
                   <input type="password" name="password" id="password" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="password" required>
                 </div>
-                
+                <div class="submit flex justify-between items-center">
                 <input type="submit" class="mt-4
                 text-white bg-[#015967] hover:bg-[#015967] focus:ring-4 focus:bg-[#015967] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#015967] dark:hover:bg-[#015967] focus:outline-none dark:focus:ring-blue-800 border-solid border-2 border-sky-500" value="login">
+                <p class="text-gray-500 dark:text-gray-400">Not registered. <a class="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline" href="check_id.php">Register Here</a></p>
+                </div>               
               </form>
           </div>
          </div>
