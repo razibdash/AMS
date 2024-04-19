@@ -656,22 +656,39 @@
     margin: 10px;
 }
 /* JOB SECTION STYLE END */
-.add-photo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: aliceblue;
-  }
 
 
   /* this is admin dashboard section start */
   .card-section{}
   .card-section .event-card{
-    width: 200px;
-    background-color: aqua;
+    width: 340px;
+    height: 120px;
+   margin-top: 20px;
   }
-  .card-section .alumni-card{}
-  .card-section .jobs-card{}
-  .card-section .gallery-card{}
+  .card-section .alumni-card{
+    width: 340px;
+    height: 120px;
+    margin-top: 20px;
+   
+  }
+  .card-section .jobs-card{
+    width: 340px;
+    height: 120px;
+    margin-top: 20px;
+   
+  }
+  .card-section .gallery-card{
+    width: 340px;
+    height: 120px;
+    margin-top: 20px;
+   
+  }
+  .text-center {
+    text-align: center;
+   padding: 10px;
+}
+#myChart{
+    height: 245px;
+    width: 248px;
+}
   /* this is admin dashboard section END */
