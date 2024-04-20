@@ -28,9 +28,9 @@
 
                       require("../config/configer.php");
 
-                     //  if(!$connect){
-                     //    echo mysqli_connect_error();
-                     //  }
+                      if(!$connect){
+                        echo mysqli_connect_error();
+                      }
 
                       if(isset($_POST["title"]) && isset($_FILES["eventPhoto"]) && isset($_POST["des"]) && isset($_POST["date"])){
                          
