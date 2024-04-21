@@ -11,34 +11,8 @@
             </svg>
 
             <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Alumni</span>Login</h1>
-             <?php
 
-               require("config/configer.php");
-
-               if(isset($_POST['id']) && isset($_POST['password']) ){
-                   $s_id=$_POST['id'];
-                   $password=$_POST['password'];
-                  if(!empty($s_id) && !empty($password)){
-                        
-                    $sql="SELECT id FROM `alumni` WHERE id='$s_id' AND password='$password'";
-
-                    $sql_query=mysqli_query($connect,$sql);
-
-                    $mysqli_num_rows=mysqli_num_rows($sql_query);
-
-                    if($mysqli_num_rows){
-
-                     echo "Login";
-                   }else{
-                       echo "<h2>invalid Student is or password</h2>";
-                   }
-
-                  }else{
-                     echo "invalid Student is or password";
-                  }
-               }
-             ?>
-              <form class="max-w-sm mx-auto" action="alumni_login.php" method="POST">
+              <form class="max-w-sm mx-auto" action="php_core/alumni_login.php" method="POST">
               <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Student ID</label>
               <div class="relative">
                   <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
