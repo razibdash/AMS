@@ -37,7 +37,12 @@
 
             $query = mysqli_query($connect,$dataInsert);
             if($query){
-              echo "Recorded";
+              if(!headers_sent()){
+                header('Location:alumni_login.php?regists');
+            }else{
+                echo '<script type="text/javascript">window.location.href="alumni_login.php"</script>';
+                
+            }
              }else{
               echo "Not Upload";
              }    

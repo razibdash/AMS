@@ -50,7 +50,15 @@ require_once("aside.php");
 
          </div>
          <div class="content text-center">
-            <h1 class="text-[#E8AA42] text-3xl font-bold">11</h1>
+         <?php
+              $readData = "SELECT * FROM `alumni`";
+              $alumniCount=0;
+              $query=mysqli_query($connect,$readData);
+              while($data = mysqli_fetch_assoc($query)){
+              $alumniCount++;
+              }
+              ?>
+            <h1 class="text-[#E8AA42] text-3xl font-bold"><?php echo $alumniCount; ?></h1>
             <p class="text-[#E8AA42] font-bold ">All Alumni</p>
          </div>
        </div>
@@ -88,24 +96,25 @@ require_once("aside.php");
           </div>
         </div>
         <div class="gallery-card h-20 w-52 p-2 bg-white shadow-lg rounded-lg m-2 flex justify-between items-center">
-        <div class="icon bg-[#FF731D] w-20 h-full rounded-md flex justify-center items-center">
+        <div class="icon bg-[#406882] w-20 h-full rounded-md flex justify-center items-center">
         <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-          <path fill-rule="evenodd" d="M7.5 4.586A2 2 0 0 1 8.914 4h6.172a2 2 0 0 1 1.414.586L17.914 6H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h1.086L7.5 4.586ZM10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" clip-rule="evenodd"/>
-          </svg>
+        <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd"/>
+      </svg>
+
 
 
           </div>
           <div class="content text-center">
           <?php
-              $readData = "SELECT * FROM `gallery`";
+              $readData = "SELECT * FROM `student_id`";
               $galleryCount=0;
               $query=mysqli_query($connect,$readData);
               while($data = mysqli_fetch_assoc($query)){
               $galleryCount++;
               }
               ?>
-              <h1 class="text-3xl text-[#FF731D] font-bold"><?php echo $galleryCount; ?></h1>
-              <p class="text-[#FF731D] font-bold">All Photos</p>
+              <h1 class="text-3xl text-[#406882] font-bold"><?php echo $galleryCount; ?></h1>
+              <p class="text-[#406882] font-bold">Student ID</p>
           </div>
         </div>
       </div>

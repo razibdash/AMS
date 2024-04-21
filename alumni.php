@@ -24,84 +24,43 @@ require_once("header.php");
             </div>
         </div>
         <div class="alumni-lists shadow-2xl bg-white rounded-lg mb-2 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <?php
+             require("config/configer.php");
+             $readData = "SELECT * FROM `alumni`";
+      
+             $query=mysqli_query($connect,$readData);
+             while($data = mysqli_fetch_assoc($query)){
+                $id=$data['id'];
+                $fname=$data['fname'];
+                $lname=$data['lname'];
+                $photo=$data['photo'];
+                $bio=$data['bio'];
+                $dept=$data['dept'];
+                $email=$data['email'];
+                $phone=$data['phone'];
+
+             
+             ?>
            <div class="alumni-items">
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow    dark:bg-gray-800 dark:border-gray-700 m-2">
                 <a href="#">
-                    <img class="rounded-t-lg p-2 h-70 rounded-full" src="image/avro.jpg" alt="" />
+                    <img class="rounded-t-lg p-2 h-70 rounded-full" src="image/<?php echo $photo; ?>" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Avronil Rajib</h5>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?php echo $fname." ".$lname ?></h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><?php echo $bio ?></p>
+
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><?php echo $email ?></p>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><?php echo $phone ?></p>
                 </div>
              </div>
            </div>
-           <div class="alumni-items">
-           <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow    dark:bg-gray-800 dark:border-gray-700 m-2">
-                <a href="#">
-                    <img class="rounded-t-lg p-2 h-70 rounded-full" src="image/s.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sazida Chowdhury</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-             </div>
-           </div>
-           <div class="alumni-items">
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow    dark:bg-gray-800 dark:border-gray-700 m-2">
-                <a href="#">
-                    <img class="rounded-t-lg p-2 h-70 rounded-full" src="image/a.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Arnab Chowdhury</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-             </div>
-           </div>
-           <div class="alumni-items">
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow    dark:bg-gray-800 dark:border-gray-700 m-2">
-                <a href="#">
-                    <img class="rounded-t-lg p-2 h-70 rounded-full" src="image/avro.jpg" alt="" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Avronil Rajib</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-             </div>
-           </div>
-           <div class="alumni-items">
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow    dark:bg-gray-800 dark:border-gray-700 m-2">
-                <a href="#">
-                    <img class="rounded-t-lg p-2 h-70 rounded-full" src="image/avro.jpg" alt="" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Avronil Rajib</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-             </div>
-           </div>
-           <div class="alumni-items">
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow    dark:bg-gray-800 dark:border-gray-700 m-2">
-                <a href="#">
-                    <img class="rounded-t-lg p-2 h-70 rounded-full" src="image/avro.jpg" alt="" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Avronil Rajib</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-             </div>
-           </div>
+           <?php
+             }
+             ?>
+           
         </div>
     </div>
 </div>

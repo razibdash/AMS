@@ -13,7 +13,7 @@
       ?>
       <?php
       require("../config/configer.php");
-      $readData = "SELECT * FROM `events`";
+      $readData = "SELECT * FROM `alumni`";
 
       $query=mysqli_query($connect,$readData);
 
@@ -51,19 +51,22 @@
                     ID
                  </th>
                  <th scope="col" class="px-6 py-3">
-                    Image
+                    Photo
                  </th>
                  <th scope="col" class="px-6 py-3">
                     Name
                  </th>
                  <th scope="col" class="px-6 py-3">
-                 Profession
+                 Department
                  </th>
                  <th scope="col" class="px-6 py-3">
                     Bio
                  </th>
                  <th scope="col" class="px-6 py-3">
-                   Contact
+                   Phone
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Email
                  </th>
                  <th scope="col" class="px-6 py-3">
                     Action
@@ -74,10 +77,13 @@
            <?php
             while($data = mysqli_fetch_assoc($query)){
                $id=$data['id'];
-               $title=$data['title'];
+               $fname=$data['fname'];
+               $lname=$data['lname'];
                $photo=$data['photo'];
-               $des=$data['des'];
-               $date=$data['date'];
+               $bio=$data['bio'];
+               $dept=$data['dept'];
+               $email=$data['email'];
+               $phone=$data['phone'];
             ?>
                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="p-4">
@@ -87,21 +93,24 @@
                     <img src="<?php echo "../image/".$photo ?>" class="w-16 md:w-32 max-w-full max-h-full" alt="not found">
                 </td>
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                    <?php echo $title ?>
+                    <?php echo $fname." ".$lname; ?>
                 </td>
                 <td class="px-6 py-4">
-                <?php echo $des ?>
+                <?php echo $dept ?>
                 </td>
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                 <?php echo $date ?>
+                 <?php echo $bio; ?>
                 </td>
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                 <?php echo $date ?>
+                 <?php echo $phone ?>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                 <?php echo $email ?>
                 </td>
                 <td class="px-6 py-4 ">
                   
-                    <a href="editEvents.php?edit=<?php echo $id;?>" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
-                    <a href="../php_core/deleteEvent.php?del=<?php echo $id;?>" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
+                    <a href="edit=<?php echo $id;?>" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
+                    <a href="del=<?php echo $id;?>" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
                 </td>
                </tr>
           <?php
@@ -115,48 +124,6 @@
         </div>
         </div>
       </div>
-   </div>
-   <div class="upcomingEvent p-5 bg-white rounded-lg shadow-lg">
-    <div class="upComingContent">   
-        <h1 class="mb-10 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">Upcoming Events</h1>
-    </div>
-    <div class="eventCard container flex justify-center flex-wrap gap-2">
-          <?php
-            $readData = "SELECT * FROM `events`";
-            $query=mysqli_query($connect,$readData);
-
-            while($data = mysqli_fetch_assoc($query)){
-               $title = $data['title'];
-               $photo = $data['photo'];
-               $des = $data['des'];
-               $date = $data['date'];
-            ?>
-            <div class=" mb-8 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg min-h-60" src="
-                    <?php echo"../image/".$photo ?>
-                    " alt="not Found" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                           <?php echo $title ?>
-                        </h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                       <?php echo $des ?>
-                    </p>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                       <?php echo $date ?>
-                    </p>
-                </div>
-             </div>
-            <?php
-            }
-            ?>
-
-
-    </div>
    </div>
  </div>
 </div>
