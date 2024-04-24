@@ -2,6 +2,9 @@
 
 require("../config/configer.php");
 
+session_start();
+
+if( empty($_SESSION['user_id'])){
 
 if(isset($_POST['id']) && isset($_POST['password']) ){
     $s_id=$_POST['id'];
@@ -15,7 +18,7 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
      $mysqli_num_rows=mysqli_num_rows($sql_query);
 
      if($mysqli_num_rows){
-
+      $_SESSION['user_id']=$s_id;
        if(!headers_sent()){
          header("Location:../Alumni/dashboard.php?user_id=$s_id");
      }else{
@@ -31,5 +34,5 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
       echo "invalid Student is or password";
    }
   }
-
+}
 ?>

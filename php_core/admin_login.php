@@ -4,7 +4,7 @@
 
            session_start();
 
-           if( empty($_SESSION['user_id'])){
+           if(empty($_SESSION['user_id'])){
 
               if(isset($_POST["email"]) && isset($_POST["password"])){
 
@@ -13,7 +13,7 @@
 
                  if(!empty($email) && !empty($password)){
 
-                    $sql="SELECT ID FROM `admin` WHERE email='$email' AND password='$password'";
+                    $sql="SELECT id FROM `admin` WHERE email='$email' AND password='$password'";
 
                     $sql_query=mysqli_query($connect,$sql);
 
@@ -23,9 +23,7 @@
 
                        $data= mysqli_fetch_array($sql_query);
                        $id = $data['id'];
-
                        $_SESSION['user_id']=$id;
-
                        header("location:../Admin/admin.php");
                     }else{
                         header("location:../login.php?invalid");
@@ -36,6 +34,7 @@
                  }
               }
             }else{
-               header("location:../login.php");
+                header("location:../login.php");
+
             }
           ?>

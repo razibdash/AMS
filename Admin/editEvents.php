@@ -34,6 +34,7 @@
                       
                      ?>
     <?php
+             require("../config/configer.php");
             if(isset($_GET["edit"])){
             $getId=$_GET["edit"];
             $editInfo = "SELECT `id`, `title`, `des`, `photo`, `date` FROM `events` WHERE id=$getId";
@@ -67,9 +68,9 @@
 
                move_uploaded_file($eventPhotolocation,$up_photo);
 
-              $update_sql="UPDATE `events` SET `title`='$title',`des`='$des',`photo`='$eventPhotoName',`date`='$date' WHERE id='$newId'";
+              $update_sql=" UPDATE `events` SET `title`='$title',`des`='$des',`photo`='$eventPhotoName',`date`='$date' WHERE id='$newId'";
 
-            $up_sql_query= mysqli_query($connect,$update_sql);
+              $up_sql_query = mysqli_query($connect,$update_sql);
 
             if($up_sql_query){
                echo "Updated";            

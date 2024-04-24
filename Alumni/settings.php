@@ -43,10 +43,10 @@
             
         <div class="alumni flex justify-left gap-10  flex-wrap">
             <div class="info_alumni bg-[#FFF7E9] rounded-lg shadow-lg w-80">
-               <div class="pro_pic flex  justify-center items-center">
+               <div class="pro_pic flex bg-white p-3 m-2 justify-center items-center">
                    <img class=" w-32 h-32 p-3 mt-4 rounded-full" src="../image/<?php echo $photo ?>" alt="image Not Found!!">
                </div>
-               <div class="infomation p-3 m-3 border-box">
+               <div class="infomation bg-white rounded-lg shadow-lg p-5 m-2 border-box">
                   <h1 class="mt-4 text-2xl font-extrabold dark:text-black">ID : <?php echo $id; ?></h1>
                   <h1 class="mt-4 text-lg font-bold dark:text-black">Full Name : <span class="text-lg font-normal text-gray-500 dark:text-gray-700"><?php echo $fname." ".$lname; ?></span></h1>
                   <h1 class="mt-4 text-lg font-bold dark:text-black">Department : <span class="text-lg font-normal text-gray-500 dark:text-gray-700"><?php echo $dept; ?></span></h1>
@@ -59,11 +59,28 @@
             </div>
             <div class="info_update bg-[#FFF7E9] rounded-lg shadow-lg p-4">
                 <div class="profile_update bg-white rounded-lg shadow-lg p-5 mb-3">
-                    <h1 class="text-2xl text-center">profile update</h1>
-                     <form action="" method="POST">
-                        
+                    <h1 class="text-2xl text-center">Change profile</h1>
+                    <!-- CHNAGE PROFILE PICTURE -->
+                    <?php
+                       if(isset($_FILES['photo'])){
+                        $photoName = $_FILES["photo"]["name"];
+                        $photolocation = $_FILES["photo"]["tmp_name"];
+                        $up_photo = "../image/".$photoName;
+                        move_uploaded_file($photolocation,$up_photo);
+                        $update_sql="UPDATE `alumni` SET `photo`='$photoName' WHERE id='$user_id'";
+                        $up_sql_query= mysqli_query($connect,$update_sql);
+                        if($up_sql_query){
+                           echo "Updated";            
+                         }else{
+                           echo "Not Updated!";
+                         }
+                       }
+                    ?>
+                    <!-- CHNAGE PROFILE PICTURE -->
+                  
+                     <form action="settings.php?user_id=<?php echo $id; ?>" method="POST" enctype="multipart/form-data">                        
                             <label class="block mb-2 text-sm font-medium text-black-900 dark:text-black" for="file_input">Upload file</label>
-                            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file">
+                            <input name="photo" class="block w-full text-sm text-black-900 border border-gray-300 rounded-lg cursor-pointer bg-white-50 dark:text-black-400 focus:outline-none dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file" required>
 
                             <input type="submit" value="Update" class="text-white bg-blue-700 mt-3 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" />
 
@@ -71,15 +88,31 @@
                 </div>
 
                  <div class="chnage-password bg-white rounded-lg shadow-lg p-5 mb-3">
+                    <!-- CHNAGE PASSWORD SECTION -->
+                    <?php
+                       require("../config/configer.php");
+                      if(isset($_POST['currentPassword'])){
+                        $currentPassword = $_POST['currentPassword'];
+                        $update_pass = "UPDATE `alumni` SET `password`='$currentPassword' WHERE id='$user_id'";
+                        $up_pass_query = mysqli_query($connect,$update_pass);
+                        if($up_pass_query){
+                           echo "Updated";            
+                         }else{
+                           echo "Not Updated!";
+                         }
+                      }
+
+                    ?>
+                    <!-- CHNAGE PASSWORD SECTION -->
                      <h1 class="text-2xl text-center">Change Password</h1>
-                     <form action="">
+                     <form action="settings.php?user_id=<?php echo $id;?>" method="POST">
                             <div>
-                                <label for="prevpassword" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Preveous password</label>
-                                <input type="password" name="prevpassword" id="prevpassword" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="preveous password" required />
+                                <label for="prevpassword" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Previous password</label>
+                                <input type="password" name="prevpassword" id="prevpassword" class="bg-white-50 border border-white-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="previous password" required />
                             </div>
                             <div>
-                                <label for="currentPassword" name="currentPassword" class="block mb-2 mt-2 text-sm font-medium text-black-900 dark:text-black">Current Password</label>
-                                <input type="password" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="current password" required />
+                                <label for="currentPassword" class="block mb-2 mt-2 text-sm font-medium text-black-900 dark:text-black">Current Password</label>
+                                <input type="password" name="currentPassword"  id="last_name" class="bg-white-50 border border-white-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="current password" required />
                             </div>
                            <div>
                            <input type="submit" value="Update" class="text-white bg-blue-700 mt-3 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" />
@@ -89,52 +122,64 @@
             </div>
             <div class="info-update bg-[#FFF7E9] rounded-lg shadow-lg p-4">
                   <div class="form-section bg-white p-5 shadow-lg rounded-lg">
+                    <!-- UPDATE INFORMATION -->
+                     <?php
+                       if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['phone']) && isset($_POST['dept']) && isset($_POST['cgpa']) && isset($_POST['email']) && isset($_POST['bio'])){
+
+                        $fName=$_POST['first_name'];
+                        $lName=$_POST['last_name'];
+                        $phoneNumber=$_POST['phone'];
+                        $deptment=$_POST['dept'];
+                        $CGPA=$_POST['cgpa'];
+                        $emailAdd=$_POST['email'];
+                        $bioUser=$_POST['bio'];
+
+                        $info_update_sql="UPDATE `alumni` SET `fname`='$fName',`lname`='$lName',`phone`='$phoneNumber',`dept`='$deptment',`cgpa`='$CGPA',`email`='$emailAdd',`bio`='$bioUser' WHERE id='$user_id'";
+
+                        $update_sql_query= mysqli_query($connect,$info_update_sql);
+                        if($update_sql_query){
+                           echo "Updated";            
+                         }else{
+                           echo "Not Updated!";
+                         }
+
+                       }
+                     ?>
+                    <!-- UPDATE INFORMATION -->
                   <h1 class="text-2xl text-center">Information Update</h1>
-                            <form>
+                            <form action="settings.php?user_id=<?php echo $id; ?>" method="POST">
                                 <div class="grid gap-6 mb-6 md:grid-cols-2">
                                     <div>
                                         <label for="first_name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">First name</label>
-                                        <input type="text" id="first_name" value="<?php echo $fname ?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
+                                        <input type="text" name="first_name" id="first_name" value="<?php echo $fname ?>" class="bg-white-500 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
                                     </div>
                                     <div>
                                         <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Last name</label>
-                                        <input type="text" value="<?php echo $lname ?>" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
+                                        <input type="text" name="last_name" value="<?php echo $lname ?>" id="last_name" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
                                     </div>
                                     <div>
                                         <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Phone</label>
-                                        <input type="text" value="<?php echo $phone ?>" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required />
+                                        <input type="text" value="<?php echo $phone ?>" id="company" name="phone" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="017xxxxxxxx" required />
                                     </div>  
+                                    
                                     <div>
-                                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Phone number</label>
-                                        <input type="text" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678"  required />
+                                        <label for="dept" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Department</label>
+                                        <input type="text" name="dept" id="dept" value="<?php echo $dept; ?>" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required />
                                     </div>
                                     <div>
-                                        <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Website URL</label>
-                                        <input type="url" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required />
-                                    </div>
-                                    <div>
-                                        <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Unique visitors (per month)</label>
-                                        <input type="number" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+                                        <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">CGPA</label>
+                                        <input type="number" name="cgpa"  id="visitors" value="<?php echo $cgpa ?>" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cgpa" required />
                                     </div>
                                 </div>
                                 <div class="mb-6">
                                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Email address</label>
-                                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
+                                    <input type="email" name="email" value="<?php echo $email; ?>" id="email" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
                                 </div> 
                                 <div class="mb-6">
-                                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Password</label>
-                                    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
+                                    <label for="bio" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Bio</label>
+                                    <input type="text" name="bio" value="<?php echo $bio; ?>" id="bio" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
                                 </div> 
-                                <div class="mb-6">
-                                    <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Confirm password</label>
-                                    <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-                                </div> 
-                                <div class="flex items-start mb-6">
-                                    <div class="flex items-center h-5">
-                                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
-                                    </div>
-                                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
-                                </div>
+
                                 <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Update</button>
                             </form>
 

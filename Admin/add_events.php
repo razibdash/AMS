@@ -44,7 +44,7 @@
 
                         move_uploaded_file($eventPhotolocation,$up_photo);
 
-                        $dataSet = " INSERT INTO `events` (`title`, `des`, `photo`, `date`) VALUES ('$title','$des','$eventPhotoName','$date')";
+                        $dataSet = "INSERT INTO `events` (`title`, `des`, `photo`, `date`) VALUES ('$title','$des','$eventPhotoName','$date')";
 
                          $query = mysqli_query($connect,$dataSet);
                         // mysqli_query($connect,$dataSet);
