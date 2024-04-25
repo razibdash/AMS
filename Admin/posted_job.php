@@ -13,7 +13,7 @@ require_once("aside.php");
 ?>
 <?php
       require("../config/configer.php");
-      $readData = "SELECT * FROM `events`";
+      $readData = "SELECT * FROM `jobs`";
 
       $query=mysqli_query($connect,$readData);
 
@@ -51,16 +51,22 @@ require_once("aside.php");
                     ID
                  </th>
                  <th scope="col" class="px-6 py-3">
-                    Image
+                    Job Title
                  </th>
                  <th scope="col" class="px-6 py-3">
-                    Title
+                    Des
                  </th>
                  <th scope="col" class="px-6 py-3">
-                    Describe
+                    Location
                  </th>
                  <th scope="col" class="px-6 py-3">
-                    Date
+                 Experience
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                 Salary
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                 Employment Status
                  </th>
                  <th scope="col" class="px-6 py-3">
                     Action
@@ -71,18 +77,18 @@ require_once("aside.php");
            <?php
             while($data = mysqli_fetch_assoc($query)){
                $id=$data['id'];
-               $title=$data['title'];
-               $photo=$data['photo'];
+               $title=$data['job_title'];
                $des=$data['des'];
-               $date=$data['date'];
+               $location=$data['location'];
+               $experience=$data['experience'];
+               $salary=$data['salary'];
+               $employment_status=$data['employment_status'];
             ?>
                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="p-4">
                     <h2><?php echo $id ?></h2>
                 </td>
-                <td class="p-4">
-                    <img src="<?php echo "../image/".$photo ?>" class="w-16 md:w-32 max-w-full max-h-full" alt="not found">
-                </td>
+              
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                     <?php echo $title ?>
                 </td>
@@ -90,7 +96,16 @@ require_once("aside.php");
                 <?php echo $des ?>
                 </td>
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                 <?php echo $date ?>
+                 <?php echo $location ?>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                 <?php echo $experience ?>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                 <?php echo $salary ?>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                 <?php echo $employment_status ?>
                 </td>
                 <td class="px-6 py-4 ">
                   
@@ -119,10 +134,10 @@ require_once("aside.php");
             <!-- job ONE -->
             <div class="max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MERN Stack Developer</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?php echo $title; ?></h5>
                 </a>
                 <div class="job-describtion">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> <?php echo $des;?></p>
                 </div>
                 <div class="job-requirment">
                 <ul class="space-y-4 text-left text-gray-500 dark:text-gray-400">
@@ -130,32 +145,27 @@ require_once("aside.php");
                         <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span>On-site  Full-time</span>
+                        <span><?php echo $location;?></span>
                     </li>
                     <li class="flex items-center space-x-3 rtl:space-x-reverse">
                         <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span>No setup, or hidden fees</span>
+                        <span><?php echo $experience;?></span>
                     </li>
                     <li class="flex items-center space-x-3 rtl:space-x-reverse">
                         <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span>Team size: <span class="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+                        <span>Salary: <span class="font-semibold text-gray-900 dark:text-white"><?php echo $salary;?></span></span>
                     </li>
                     <li class="flex items-center space-x-3 rtl:space-x-reverse">
                         <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                         </svg>
-                        <span>Premium support: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+                        <span>Employment status: <span class="font-semibold text-gray-900 dark:text-white"><?php echo $employment_status?></span></span>
                     </li>
-                    <li class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                        </svg>
-                        <span>Free updates: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
-                    </li>
+                    
                 </ul>
                 </div>
 

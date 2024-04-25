@@ -69,8 +69,16 @@ require_once("aside.php");
        </svg>
       
       </div>
+      <?php
+              $readData = "SELECT * FROM `jobs`";
+              $jobCount=0;
+              $query=mysqli_query($connect,$readData);
+              while($data = mysqli_fetch_assoc($query)){
+              $jobCount++;
+              }
+              ?>
          <div class="content text-center">
-            <h1 class="text-3xl text-[#9A55F3] font-bold">12</h1>
+            <h1 class="text-3xl text-[#9A55F3] font-bold"><?php echo $jobCount;?></h1>
             <p class="text-[#9A55F3] font-bold">Posted Job</p>
          </div>
        </div>

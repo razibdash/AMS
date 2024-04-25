@@ -23,7 +23,7 @@ require_once("header.php");
 
             </div>
         </div>
-        <div class="alumni-lists shadow-2xl bg-white rounded-lg mb-2 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="alumni-lists shadow-2xl bg-white rounded-lg mb-2 max-w-screen-xl flex flex-wrap items-center justify-left mx-auto p-4">
             <?php
              require("config/configer.php");
              $readData = "SELECT * FROM `alumni`";
