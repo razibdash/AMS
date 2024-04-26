@@ -33,8 +33,18 @@
                </svg>
 
                </div>
+               <?php
+                  $jobsCounter=0;
+                  require("../config/configer.php");
+                  $readData = "SELECT * FROM `jobs`";
+                  $query=mysqli_query($connect,$readData);
+
+                  while($data = mysqli_fetch_assoc($query)){
+                     $jobsCounter++;
+                  }
+                  ?>
                <div class="content text-center">
-                  <h1 class="text-3xl text-[#9A55F3] font-bold">12</h1>
+                  <h1 class="text-3xl text-[#9A55F3] font-bold"><?php echo $jobsCounter;?></h1>
                   <p class="text-[#9A55F3] font-bold">Posted Job</p>
                </div>
                </div>

@@ -1,26 +1,31 @@
+<!-- this is flowbite link -->
 <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.css" integrity="sha512-ttaKI7P6G+denBpzGujwqjguFDsmxcxfVY+KovsyIpQ3vWbVdilbohqij8ewk16HN3vLghlCAXUWsl0KYQo6pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.js" integrity="sha512-bUju8VkXhCQgW7zCHSdiIDpECo/lqzChkKrKoc1v2PL2XqO/0Q2Y8dhu07+q6Rk+1c1xr6cfE0VZnumgwy93Ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-<div class="admin">
-   
-<?php
-require_once("navigation.php");
-?>
-<?php
-require_once("aside.php");
-?>
-<?php
-      require("../config/configer.php");
-      $readData = "SELECT * FROM `jobs`";
+<!-- this is flowbite link -->
 
-      $query=mysqli_query($connect,$readData);
+   <?php
+     require_once("navigation.php");
+   ?>
+
+    <?php
+    require_once("aside.php");
+    ?>
+     
+     <?php
+            require("../config/configer.php");
+            $readData = "SELECT * FROM `jobs`";
+
+            $query=mysqli_query($connect,$readData);
 
       ?>
 <div class="p-4 sm:ml-64 bg-[#DFF6FF]">
-   <div class="p-4  border-gray-200 rounded-lg dark:border-gray-700 mt-14">
-    <div class="jobs mt-5 mb-5">
+   <div class="p-4  border-gray-200  rounded-lg  mt-14">
+            
+   <div class="jobs mt-5 mb-5">
           <div class="total-jobs bg-sky-900 p-5 rounded-lg shadow-2xl">
              <div class="heading-event max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
                <div class="event-list-text">
@@ -86,14 +91,14 @@ require_once("aside.php");
             ?>
                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="p-4">
-                    <h2><?php echo $id ?></h2>
+                    <h2><?php echo $id; ?></h2>
                 </td>
               
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                    <?php echo $title ?>
+                    <?php echo $title; ?>
                 </td>
                 <td class="px-6 py-4">
-                <?php echo $des ?>
+                <?php echo $des; ?>
                 </td>
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                  <?php echo $location ?>
@@ -131,20 +136,6 @@ require_once("aside.php");
          <h1 class="mb-4 p-5 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">job for fresher </h1>
         </div>
         <div class="job-card flex justify-center flex-wrap ">
-            <?php
-            require("../config/configer.php");
-            $readData = "SELECT * FROM `jobs`";
-      
-            $query=mysqli_query($connect,$readData);
-         while($data = mysqli_fetch_assoc($query)){
-               $id=$data['id'];
-               $title=$data['job_title'];
-               $des=$data['des'];
-               $location=$data['location'];
-               $experience=$data['experience'];
-               $salary=$data['salary'];
-               $employment_status=$data['employment_status'];
-            ?>
             <!-- job ONE -->
             <div class="max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
@@ -190,14 +181,13 @@ require_once("aside.php");
                     </svg>
                 </a>
             </div>
-            <?php
-        }
-        ?>
             <!-- job one -->
 
         </div>
     </div>
    </div>
+  
+   </div>
 </div>
 
-</div>
+
