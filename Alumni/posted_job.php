@@ -114,8 +114,8 @@
                 </td>
                 <td class="px-6 py-4 ">
                   
-                    <a href="?edit=<?php echo $id;?>" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
-                    <a href="?del=<?php echo $id;?>" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
+                    <a href="" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
+                    <a href="" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
                 </td>
                </tr>
           <?php
@@ -136,6 +136,20 @@
          <h1 class="mb-4 p-5 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">job for fresher </h1>
         </div>
         <div class="job-card flex justify-center flex-wrap ">
+        <?php
+                require("../config/configer.php");
+                $readData = "SELECT * FROM `jobs`";
+
+                $query=mysqli_query($connect,$readData);
+            while($data = mysqli_fetch_assoc($query)){
+               $id=$data['id'];
+               $title=$data['job_title'];
+               $des=$data['des'];
+               $location=$data['location'];
+               $experience=$data['experience'];
+               $salary=$data['salary'];
+               $employment_status=$data['employment_status'];
+            ?>
             <!-- job ONE -->
             <div class="max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
@@ -181,6 +195,9 @@
                     </svg>
                 </a>
             </div>
+            <?php
+            }
+            ?>
             <!-- job one -->
 
         </div>
