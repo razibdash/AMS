@@ -232,7 +232,7 @@
 <!-- JOB SECTION END -->
 
 <!-- Success Story START -->
-   <div class="success-story ">
+  <div class="success-story ">
       <div class="text-story">
             <h1 class="text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">Success <span class="text-blue-800 bold">Story</span></h1>
             <p class="font-normal text-center text-gray-500 dark:text-gray-400">Our Alumni Is Our Mirror</p>
@@ -261,18 +261,90 @@
             <?php
             }
             ?>
-      </div>
-
-   </div>
+         </div>
+  </div>
+        </div>
 <!-- Success Story START -->
 
+<!-- Contact US START -->
+  <section class="bg-[#FFF7E9] p-5 mt-10">
+        <div class="contact-us mt-10  container-md">
+            <div class="contact-heading">
+                    <h1 class="text-center m-0 text-black-500 font-extrabold  dark:text-black-400 text-4xl">Contact <span class="text-blue-800 bold">Us</span></h1>
+                            <p class="font-normal text-center text-gray-500 dark:text-gray-400">Contact us anythime.</p>
+            </div>
+            <div class="map-mail flex justify-center ">
+                <div class="map-box mt-5">
+                <div class="icon text-center rouonded-lg shadow-lg p-4">
+                        <svg class="w-6 h-6 m-auto text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
+                        </svg>
+                        <h1 class="font-bold text-gray-600 dark:text-gray-700">Our Address</h1>
+                        <p class="font-normal text-gray-500 dark:text-gray-400">Academic Building, MU, Room No #307</p>
+                </div>
+                    <div class="map-insert mt-5">
+                        <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0567059008013!2d91.97044227515443!3d24.930138077883875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750552bc71c899d%3A0x804e438bcc32b390!2sMetropolitan%20University%20Sylhet!5e0!3m2!1sen!2sbd!4v1714243771016!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+                    </div>
+                </div>
+                <div class="mail-box">
+                    <div class="email-call flex justify-center items-center">
+                            <div class="icon w-80 m-4 text-center rouonded-lg shadow-lg p-4">
+                                <svg class="w-6 h-6 m-auto text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
+                                </svg>
+                                <h1 class="font-bold text-gray-600 dark:text-gray-700">Email Us</h1>
+                                <p class="font-normal text-gray-500 dark:text-gray-400">alumni@iubat.edu</p>
+                            </div>
+                            <div class="icon w-80 m-4 text-center rouonded-lg shadow-lg p-4">
+                                    <svg class="w-6 h-6 m-auto text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <h1 class="font-bold text-gray-600 dark:text-gray-700">Call Us</h1>
+                                    <p class="font-normal text-gray-500 dark:text-gray-400">01791830</p>
+                            </div>
+                    </div>
+                    <div class="contact-form p-5 rounded-lg shadow-lg">                
+                            <form>
+                                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                                    <div>
+                                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                                        <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+                                    </div>
+                                    <div>
+                                        <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
+                                        <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required />
+                                    </div>
+                                
+                                
+                                
+                                
+                                </div>
+                                <div class="mb-6">
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+                                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
+                                </div> 
+                            
+                                <div class="mb-6">
+                                    
+                                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+
+                                </div> 
+                                <button type="submit" class="text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+<!-- Contact US END -->
 
 <!-- FOOTER SECTION START -->
 <div class="footer-section w-full">
     <?php
         require_once("footer.php");
     ?>
-</div>
+</div> 
 <!-- FOOTER SECTION END -->
 </body>
 </html>

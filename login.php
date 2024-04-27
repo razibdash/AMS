@@ -39,18 +39,6 @@
                 text-white bg-[#015967] hover:bg-[#015967] focus:ring-4 focus:bg-[#015967] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#015967] dark:hover:bg-[#015967] focus:outline-none dark:focus:ring-blue-800 border-solid border-2 border-sky-500" value="login">
               </form>
           </div>
-         <div class="alumni-login m-5 bg-[#015967] p-10 rounded scroll-p-5 shadow-md">
-          <div class="alumni-icon">
-                  <svg class="w-20 h-20 m-auto text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd"/>
-                </svg>
-            </div>
-         <h1 class="mb-4 text-2xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl dark:text-white">Are You Alumni ?</h1>
-            <div class="alumni-login-button text-center">
-            <a href="alumni_login.php" class="mt-4
-                text-white bg-[#015967] hover:bg-[#015967] focus:ring-4 focus:bg-[#015967] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#015967] dark:hover:bg-[#015967] focus:outline-none dark:focus:ring-blue-800 border-solid border-2 border-sky-500" >Click Here</a>
-            </div>
-         </div>
        </div>
      </div>
   </div>
