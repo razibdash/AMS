@@ -1,7 +1,9 @@
 <?php
   require_once("header.php");
+  $error="";
 ?>
-<div class="loginSection">
+<h1><?php echo $error;?></h1>
+<div class="loginSection">    
      <div class="container">
           <div class="login-part bg-[#015967] shadow-md max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
                 <div class="ragi-form">
@@ -9,12 +11,11 @@
                         <h1 class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Alumni</span> Registration</h1>
                   </div>
         <?php
-
            require("config/configer.php");
            if(!$connect){
             echo mysqli_connect_error();
           }
-
+           
           if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['StudentId']) && isset($_POST['phone']) && isset($_POST['Department']) && isset($_POST['cgpa']) && isset($_FILES['photo']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['bio'])){
 
             $fname= $_POST['first_name'];
@@ -33,23 +34,38 @@
             $up_photo = "image/".$PhotoName;
             move_uploaded_file($Photolocation,$up_photo);
 
-            $dataInsert="INSERT INTO `alumni`(`id`, `fname`, `lname`, `phone`, `dept`, `cgpa`, `photo`, `email`, `password`, `bio`) VALUES ('$studentId','$fname','$lname','$phone','$Department','$cgpa','$PhotoName','$email','$password','$bio')";
+            $hash=password_hash($password,PASSWORD_DEFAULT);
 
-            $query = mysqli_query($connect,$dataInsert);
-            if($query){
-              if(!headers_sent()){
-                header('Location:alumni_login.php?regists');
-            }else{
-                echo '<script type="text/javascript">window.location.href="alumni_login.php"</script>';
-                
-            }
-             }else{
-              echo "Not Upload";
-             }    
+             $student_Id="SELECT * FROM `student_id`";
+             $query=mysqli_query($connect,$student_Id);
+
+            while($row = mysqli_fetch_assoc($query)){
+
+              $std_id=$row['id'];
+
+               if($studentId==$std_id){
+
+                $dataInsert="INSERT INTO `alumni`(`id`, `fname`, `lname`, `phone`, `dept`, `cgpa`, `photo`, `email`, `password`, `bio`) VALUES ('$studentId','$fname','$lname','$phone','$Department','$cgpa','$PhotoName','$email','$hash','$bio')";
+                $query = mysqli_query($connect,$dataInsert);
+                    if($query){
+                    if(!headers_sent()){
+                        header('Location:alumni_login.php?regists');
+                    }else{
+                        echo '<script type="text/javascript">window.location.href="alumni_login.php"</script>';
+                        
+                    }
+                 }else{
+                    echo "Not Upload";
+                    }   
+
+               }else{
+                 $error="Student Id Is Worng!";
+               }
+            }     
 
           }
         ?>
-                   
+             
 <form action="registration.php" method="POST" enctype="multipart/form-data" >
     <div class="grid gap-6 mb-6 md:grid-cols-2">
         <div>
@@ -66,7 +82,7 @@
         </div>  
         <div>
             <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-            <input type="text" name="phone" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="018xxxxxxxx" required />
+            <input type="tel" name="phone" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" pattern="[0-9]{11}" placeholder="018xxxxxxxx"  required />
         </div>
         <div>
             <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Department</label>
@@ -74,7 +90,7 @@
         </div>
         <div>
             <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CGPA</label>
-            <input type="number" name="cgpa" id="cgpa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cgpa" required />
+            <input type="number" step="any" name="cgpa" id="cgpa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cgpa" required />
         </div>
     </div>
     <div class="mb-6">      

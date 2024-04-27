@@ -33,7 +33,9 @@
   $email=$data['email'];
   $phone=$data['phone'];
   $cgpa=$data['cgpa'];
-  $password=$data['password'];
+  $pass=$data['password'];
+  $password=str_replace($pass,"*********",$pass);
+
  }
 
 ?>
