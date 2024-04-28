@@ -93,7 +93,8 @@
                     <!-- CHNAGE PASSWORD SECTION -->
                     <?php
                        require("../config/configer.php");
-                      if(isset($_POST['currentPassword'])){
+                      if(isset($_POST['currentPassword']) && isset($_POST['prevpassword'])){
+                        $prevpassword = $_POST['prevpassword'];
                         $currentPassword = $_POST['currentPassword'];
                         $update_pass = "UPDATE `alumni` SET `password`='$currentPassword' WHERE id='$user_id'";
                         $up_pass_query = mysqli_query($connect,$update_pass);

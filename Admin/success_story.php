@@ -73,8 +73,8 @@
                 </td>
                 <td class="px-6 py-4 ">
                   
-                    <a href="#" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
-                    <a href="#" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
+                    <a href="edit/success_edit.php?edit=<?php echo $id?>" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
+                    <a href="../php_core/success_del.php?del=<?php echo $id?>" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
                 </td>
                </tr>
           <?php
@@ -105,17 +105,17 @@
                 $des=$data['Bio'];
             ?>
             <div class=" mb-8 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+                <div class="p-1">
                     <img class="rounded-t-lg min-h-60" src="
                     <?php echo"../image/".$photo ?>
                     " alt="not Found" />
-                </a>
+                </div>
                 <div class="p-5">
-                    <a href="#">
+                    <div class="p-1">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                            <?php echo $title ?>
                         </h5>
-                    </a>
+                    </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                        <?php echo $des ?>
                     </p>

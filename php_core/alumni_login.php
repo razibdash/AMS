@@ -23,7 +23,7 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
      if($num==1){
         while($data=mysqli_fetch_assoc($sql_query)){
 
-              $data['id'];
+             
             if(password_verify($password,$data['password'])){
 
                 $_SESSION['user_id']=$s_id;
@@ -33,14 +33,14 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
                 }else{
                   echo '<script type="text/javascript">window.location.href="../Alumni/dashboard.php?user_id=$s_id"</script>';     
                   }
-            // }else{
-            //   $error= "invalid Student ID or password";
-            //   if(!headers_sent()){
-            //     header("Location:../alumni_login.php?error=$error");
-            // }else{
-            //     echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
+            }else{
+              $error= "invalid Student ID or password";
+              if(!headers_sent()){
+                header("Location:../alumni_login.php?error=$error");
+            }else{
+                echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
                 
-            // }
+            }
       
           }
         }    
@@ -49,5 +49,13 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
       echo "test";
    }
   }
+}else{
+  
+      if(!headers_sent()){
+        header("Location:../alumni_login.php?error=$error");
+    }else{
+        echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
+        
+    }
 }
 ?>

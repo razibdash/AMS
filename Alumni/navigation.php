@@ -28,7 +28,7 @@
          </button>
          <a href="dashboard.php?user_id=<?php echo $id;?>" class="flex ms-2 md:me-24">
           <img src="../image/logo.png" class="h-12 mt-1" alt="Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AMS</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MU Alumni</span>
         </a>
       </div>
       <?php
