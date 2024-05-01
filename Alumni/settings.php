@@ -93,29 +93,46 @@
                     <!-- CHNAGE PASSWORD SECTION -->
                     <?php
                        require("../config/configer.php");
+                       $msgForPassword="";
                       if(isset($_POST['currentPassword']) && isset($_POST['prevpassword'])){
                         $prevpassword = $_POST['prevpassword'];
                         $currentPassword = $_POST['currentPassword'];
-                        $update_pass = "UPDATE `alumni` SET `password`='$currentPassword' WHERE id='$user_id'";
-                        $up_pass_query = mysqli_query($connect,$update_pass);
-                        if($up_pass_query){
-                           echo "Updated";            
-                         }else{
-                           echo "Not Updated!";
-                         }
+
+                        $sql="SELECT * FROM `alumni` WHERE id='$user_id'";
+                        $sql_query=mysqli_query($connect,$sql);
+                        $Pass=mysqli_fetch_assoc($sql_query);
+                        $hashPass=$Pass['password'];
+
+                        if(password_verify($prevpassword,$hashPass)){
+
+                          $hash=password_hash($currentPassword,PASSWORD_DEFAULT); 
+
+                          $update_pass = "UPDATE `alumni` SET `password`='$hash' WHERE id='$user_id'";
+
+                          $up_pass_query = mysqli_query($connect,$update_pass);
+                          if($up_pass_query){
+                            $msgForPassword= "Updated";            
+                          }else{
+                            $msgForPassword= "Not Updated!";
+                          }
+                        }else{
+                          $msgForPassword="Worng Previous Password!";
+                          
+                        }
                       }
 
                     ?>
                     <!-- CHNAGE PASSWORD SECTION -->
                      <h1 class="text-2xl text-center">Change Password</h1>
                      <form action="settings.php?user_id=<?php echo $id;?>" method="POST">
+                       <h1 class="mt-1 text-red-600"><?php echo $msgForPassword; ?></h1>
                             <div>
                                 <label for="prevpassword" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Previous password</label>
-                                <input type="password" name="prevpassword" id="prevpassword" class="bg-white-50 border border-white-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="previous password" required />
+                                <input type="password" name="prevpassword" id="prevpassword" class="bg-white-50 border border-white-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="previous password" required />
                             </div>
                             <div>
                                 <label for="currentPassword" class="block mb-2 mt-2 text-sm font-medium text-black-900 dark:text-black">Current Password</label>
-                                <input type="password" name="currentPassword"  id="last_name" class="bg-white-50 border border-white-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="current password" required />
+                                <input type="password" name="currentPassword"  id="last_name" class="bg-white-50 border border-white-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="current password" required />
                             </div>
                            <div>
                            <input type="submit" value="Update" class="text-white bg-blue-700 mt-3 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" />
