@@ -37,6 +37,9 @@
                      if(!$connect){
                         echo mysqli_connect_error();
                      }
+                     if(isset($_GET['user_id'])){
+                         $user_id=$_GET['user_id'];
+                     }
 
                      if(isset($_POST["title"]) && isset($_FILES["image"]) && isset($_POST["des"])){
                         
@@ -99,6 +102,9 @@
                               <th scope="col" class="px-6 py-3">
                                  Describe
                               </th>
+                              <th scope="col" class="px-6 py-3">
+                                 Action
+                              </th>
                      </tr>
         </thead>
         <tbody>
@@ -126,6 +132,10 @@
                 </td>
                 <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                    <p><?php echo $des ?></p>
+                </td>
+                <td class="px-6 py-4 ">
+                  <a href="gallery_edit.php?user_id=<?php echo $user_id;?>&edit=<?php echo $id ?>" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
+                    <a href="../php_core/gallery_del.php?user_id=<?php echo $user_id;?>&del=<?php echo $id ?>" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
                 </td>
             </tr>
          <?php
