@@ -1,15 +1,14 @@
-Alumni-Management-System
+Alumni-Management-System.
+
 Alumni Management System using PHP & MySql
 
-Requirements
-
+Requirements.
 XAMPP Server
 Browser (Chrome,Mozilla)
 Code Editor (Vim, Sublime Text, VSCode)
 Features. ADMIN
 
 ADMIN Login.
-
 Add/Delete Events.
 Search Alumni.
 Add Alumni.
