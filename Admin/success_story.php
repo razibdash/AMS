@@ -73,7 +73,7 @@
                 </td>
                 <td class="px-6 py-4 ">
                   
-                    <a href="edit/success_edit.php?edit=<?php echo $id?>" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
+                    <a href="success_edit.php?edit=<?php echo $id?>" class="font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
                     <a href="../php_core/success_del.php?del=<?php echo $id?>" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
                 </td>
                </tr>

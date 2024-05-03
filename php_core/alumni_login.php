@@ -33,20 +33,30 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
                 }else{
                   echo '<script type="text/javascript">window.location.href="../Alumni/dashboard.php?user_id=$s_id"</script>';     
                   }
+
             }else{
-              $error= "invalid Student ID or password";
-              if(!headers_sent()){
-                header("Location:../alumni_login.php?error=$error");
-            }else{
-                echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
-                
-            }
-      
-          }
-        }    
-    }
+                 $error= "invalid Student ID or password";
+                  if(!headers_sent()){
+                    header("Location:../alumni_login.php?error=$error");
+                }else{
+                    echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
+                    
+                }
+             }
+
+        }   
+      }else{
+        echo "Invalid Id or Password";
+        if(!headers_sent()){
+          header("Location:../alumni_login.php?error=$error");
+        }else{
+            echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
+            
+        }
+    } 
+
    }else{
-      echo "test";
+      echo "Invalid Id or Password";
    }
   }
 }else{
