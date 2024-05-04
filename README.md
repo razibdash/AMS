@@ -21,15 +21,22 @@ Alumni Management System using PHP & MySql
   <li>Add/Delete Student ID</li>
   <li>Logout</li>
 </ul>
-<div class="">
-  <img class="" src="image/adminD.png">
+<div >
+  <img  src="image/adminD.png">
 </div>
 
 <h2>Features ALUMNI</h2>
-Alumni Registration & Login.
-Update Profile.
-Add/Reply to Forum Posts.
-Search Alumni.
+<ul>
+  <li>Alumni Registration & Login. </li>
+  <li>Update Profile. </li>
+  <li>Add/Delete/Update Gallery Photos</li>
+  <li>Add Jobs Post</li>
+  <li>Logout </li>
+</ul>
+<div >
+  <img  src="image/alumniD.png">
+</div>
+
 Check self donation amount.
 Guests
 
