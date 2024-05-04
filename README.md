@@ -2,10 +2,13 @@
 
 Alumni Management System using PHP & MySql
 
-Requirements.
-XAMPP Server
-Browser (Chrome,Mozilla)
-Code Editor (Vim, Sublime Text, VSCode)
+<h2>Requirements.</h2>
+<ul>
+  <li>XAMPP Server</li>
+  <li>Browser (Chrome,Mozilla)</li>
+  <li>Code Editor (Vim, Sublime Text, VSCode)</li>
+</ul>
+
 Features. ADMIN
 
 ADMIN Login.
