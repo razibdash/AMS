@@ -21,6 +21,9 @@ Alumni Management System using PHP & MySql
   <li>Add/Delete Student ID</li>
   <li>Logout</li>
 </ul>
+<div class="">
+  <img class="" src="image/adminD.png">
+</div>
 
 <h2>Features ALUMNI</h2>
 Alumni Registration & Login.
