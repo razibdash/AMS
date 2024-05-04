@@ -9,15 +9,20 @@ Alumni Management System using PHP & MySql
   <li>Code Editor (Vim, Sublime Text, VSCode)</li>
 </ul>
 
-Features. ADMIN
+<h2>Features ADMIN</h2>
+<ul>
+  <li>ADMIN Login.</li>
+  <li>Add/Delete Events.</li>
+  <li>Search Alumni.</li>
+  <li>Add/Delete/Update Gallery Photos</li>
+  <li>Delete Alumni</li>
+  <li>Add/Delete/Update Success Story Of university's Students</li>
+  <li>Add/Delete/Update Job Post</li>
+  <li>Add/Delete Student ID</li>
+  <li>Logout</li>
+</ul>
 
-ADMIN Login.
-Add/Delete Events.
-Search Alumni.
-Add Alumni.
-Update Finalcial Date of Alumni eg (Cash Donation/ Registration Fee etc).
-ALUMNI
-
+<h2>Features ALUMNI</h2>
 Alumni Registration & Login.
 Update Profile.
 Add/Reply to Forum Posts.
