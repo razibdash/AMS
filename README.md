@@ -1,4 +1,4 @@
-Alumni-Management-System.
+<h1>Alumni-Management-System.</h1>
 
 Alumni Management System using PHP & MySql
 
