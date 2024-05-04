@@ -13,7 +13,7 @@
          ?>
 
       <div class="p-4 sm:ml-64 bg-[#DFF6FF]">
-            <div class="p-4  border-gray-200 rounded-lg dark:border-gray-700 mt-14">
+         <div class="p-4  border-gray-200 rounded-lg dark:border-gray-700 mt-14">
             <div class="seccess">
                <div class="add-seccess">
                   <div class="title bg-sky-900 mb-5 p-5 rounded-lg shadow-2xl">
@@ -74,5 +74,6 @@
               </div>
             </div>
          </div>
+      </div>
 
 </div>
