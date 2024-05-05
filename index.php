@@ -13,7 +13,7 @@
             <div class="upComingContent">
             
                 <h1 class="mb-4 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">Upcoming <span class="text-blue-800 bold">Events</span></h1>
-                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Unlock exclusive experiences & Join to connect at our upcoming event in the Event Section of our website</p>
 
             </div>
             <div class="eventCard container">
@@ -89,8 +89,8 @@
             <div class="container">
                 <div class="gallary-content">
                     <div class="gallary-heading">
-                    <h1 class="mb-4 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">Gel<span class="text-blue-800 bold">lery</span></h1>
-                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                    <h1 class="mb-4 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">Gal<span class="text-blue-800 bold">lery</span></h1>
+                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Discover inspiration around every corner in our MU World</p>
                     </div>
                 </div>
                 <div class="gallary-images-section">   
@@ -159,7 +159,7 @@
             <div class="container container-lg container-md container-sm mx-auto">
                 <div class="job-section-heading">
                 <h1 class=" text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">Job For <span class="text-blue-800 bold">Fresher</span></h1>
-                <p class="mb-3 w-58 m-auto text-center text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mb-3 w-58 m-auto text-center text-gray-500 dark:text-gray-400">Discover entry-level positions perfect for fresh graduates eager to dive into career path</p>
                 </div>
                 <div class="job-card">
                     <!-- job ONE -->
@@ -234,8 +234,8 @@
 <!-- Success Story START -->
   <div class="success-story ">
       <div class="text-story">
-            <h1 class="text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">Success <span class="text-blue-800 bold">Story</span></h1>
-            <p class="font-normal text-center text-gray-500 dark:text-gray-400">Our Alumni Is Our Mirror</p>
+            <h1 class="text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">MU's <span class="text-blue-800 bold">Achievement</span></h1>
+            <p class="font-normal text-center text-gray-500 dark:text-gray-400">Honoring Our Heritage: The Success Story of Our University</p>
       </div>
       <div class="success-card flex justify-center items-center flex-wrap">
       <?php
@@ -292,7 +292,7 @@
         <div class="contact-us mt-10  container-md">
             <div class="contact-heading">
                     <h1 class="text-center m-0 text-black-500 font-extrabold  dark:text-black-400 text-4xl">Contact <span class="text-blue-800 bold">Us</span></h1>
-                            <p class="font-normal text-center text-gray-500 dark:text-gray-400">Contact us anythime.</p>
+                            <p class="font-normal text-center text-gray-500 dark:text-gray-400">Reach us here.</p>
             </div>
             <div class="map-mail mt-5 flex justify-center items-center">
                 <div class="map-box">

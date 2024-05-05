@@ -24,7 +24,7 @@
           <div class="total-event bg-sky-900 p-5 rounded-lg shadow-2xl">
              <div class="heading-event max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
                <div class="event-list-text">
-                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Success</span> Story</h1>
+                  <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">MU's</span> Achievement</h1>
               </div>
         </div>
      <div class="event-items mt-5">

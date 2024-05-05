@@ -3,7 +3,7 @@ require_once("header.php");
 ?>
 <div class="job-section p-5 bg-[#DFF6FF]">
       <div class="heading-job max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
-            <div class="alumni-list-text">
+            <div class="jobs-list-text">
                 <h1 class="mb-2 mt-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">Posted Jobs</h1>
             </div>
             <div class="search-job mt-5">   

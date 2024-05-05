@@ -13,7 +13,7 @@ require_once("header.php");
                 <div class="gallary-content">
                     <div class="gallary-heading">
                     <h1 class="mb-4 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">Gel<span class="text-blue-800 bold">lery</span></h1>
-                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Discover inspiration around every corner in our MU World.</p>
                     </div>
                 </div>
                 <div class="gallary-images-section">   
