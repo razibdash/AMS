@@ -72,7 +72,8 @@
                         $update_sql="UPDATE `alumni` SET `photo`='$photoName' WHERE id='$user_id'";
                         $up_sql_query= mysqli_query($connect,$update_sql);
                         if($up_sql_query){
-                           echo "Updated";            
+                           echo "Updated";  
+                                
                          }else{
                            echo "Not Updated!";
                          }
@@ -111,7 +112,8 @@
 
                           $up_pass_query = mysqli_query($connect,$update_pass);
                           if($up_pass_query){
-                            $msgForPassword= "Updated";            
+                            $msgForPassword= "Updated"; 
+                                         
                           }else{
                             $msgForPassword= "Not Updated!";
                           }
@@ -158,7 +160,8 @@
 
                         $update_sql_query= mysqli_query($connect,$info_update_sql);
                         if($update_sql_query){
-                           echo "Updated";            
+                           echo "Updated";  
+                           echo `<script type="text/javascript">window.location.href="setting.php?user_id='$user_id'"</script>`;            
                          }else{
                            echo "Not Updated!";
                          }
@@ -188,7 +191,7 @@
                                     </div>
                                     <div>
                                         <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">CGPA</label>
-                                        <input type="number" name="cgpa"  id="visitors" value="<?php echo $cgpa ?>" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cgpa" required />
+                                        <input type="number" step="0.01" min="1" max="4" name="cgpa"  id="visitors" value="<?php echo $cgpa ?>" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cgpa" required />
                                     </div>
                                 </div>
                                 <div class="mb-6">
