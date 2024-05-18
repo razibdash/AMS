@@ -16,7 +16,7 @@
                                 <a href="#" class="hover:underline">CSE CARNIVAL</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">CP SERVER</a>
+                                <a href="https://discord.com/invite/bangladesh-cp-server-bcs-powered-by-orbitax-816054133999665272" class="hover:underline">CP SERVER</a>
                             </li>
                         </ul>
                     </div>
