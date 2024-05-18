@@ -29,7 +29,7 @@ require_once("header.php");
                             </svg>
 
                                 <h1 class="font-bold mt-3 text-gray-600 dark:text-gray-700">Email Us</h1>
-                                <p class="font-normal text-gray-500 dark:text-gray-400">alumni@iubat.edu</p>
+                                <p class="font-normal text-gray-500 dark:text-gray-400">alumni@MU.edu</p>
                             </div>
                             <div class="icon w-80 m-4 text-center bg-white rounded-lg shadow-lg p-4">
                             <svg class="w-8 h-8 p-1 border border-4 border-blue-600 border-dotted rounded-full m-auto text-blue-600 dark:text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
