@@ -5,6 +5,7 @@ require_once("header.php");
        <div class="about-heading container-md">
           
              <!-- ABOUT SECTION START -->
+             <div class="div"></div>
      <div class="about-section container-md">
          <div class="about-text p-5">
             <p class=" text-2xl font-bold m-auto text-center  shadow rounded-lg">About</p>
