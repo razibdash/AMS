@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <body>
-
-        
-
-        <h1 class="heading">Best Websites to<br><span class="heading-span">Learn Competitive Programming</span></h1>
+ <?php
+ require_once("header.php");
+ ?>
+<!-- this is cp server -->
+<div class="cpServerSection">
+    
+<h1 class="heading">Best Websites to<br><span class="heading-span">Learn Competitive Programming</span></h1>
         <p class="p-tag">Here are the most popular website to practice competitive programming and make yourself a programmer.</p>
         
 
@@ -70,7 +69,8 @@
 </div>
 </div>
 
+</div>
 
- 
-    </body>
-</head>
+<?php
+require("footer.php");
+?>
