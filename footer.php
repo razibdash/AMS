@@ -16,7 +16,7 @@
                                 <a href="#" class="hover:underline">CSE CARNIVAL</a>
                             </li>
                             <li>
-                                <a href="CpServer.html" class="hover:underline">CP SERVER</a>
+                                <a href="CpServer.php" class="hover:underline">CP SERVER</a>
                             </li>
                         </ul>
                     </div>
