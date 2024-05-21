@@ -4,13 +4,8 @@
                 <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="index.php" class="flex items-center">
-<<<<<<< HEAD
                         <img src="image/mulogo.png" class="h-12 me-1 mt-1" alt="FlowBite Logo" />
                         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span> -->
-=======
-                        <img src="image/logo.png" class="h-12 me-1 mt-1" alt="FlowBite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AMS</span>
->>>>>>> cb723a2 (test)
                     </a>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -21,11 +16,7 @@
                                 <a href="#" class="hover:underline">CSE CARNIVAL</a>
                             </li>
                             <li>
-<<<<<<< HEAD
-                                <a href="https://discord.com/invite/bangladesh-cp-server-bcs-powered-by-orbitax-816054133999665272" class="hover:underline">CP SERVER</a>
-=======
-                                <a href="#" class="hover:underline">CP SERVER</a>
->>>>>>> cb723a2 (test)
+                                <a href="CpServer.html" class="hover:underline">CP SERVER</a>
                             </li>
                         </ul>
                     </div>
