@@ -692,3 +692,116 @@
     width: 248px;
 }
   /* this is admin dashboard section END */
+
+
+
+  /*ADD CP Server style*/
+
+  body{
+    background-color: rgb(17 24 39);
+}
+.heading{
+    font-size: 3rem;
+    line-height: 1;
+    color: rgb(145, 162, 164);
+    text-align: center;
+    padding-top: 8%;
+}
+.heading-span{
+    color: #059669;
+}
+.p-tag{
+    color: rgb(145, 162, 164);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.cf-server{
+    background-color: #b5d3ca;
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    margin-left: 11%;
+    margin-top: 2%;
+}
+.cp-img{
+    width: 60%;
+    padding-left: 18%;
+}
+.cc-server{
+    background-color: #b5d3ca;
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    margin-left: 11%;
+    margin-top: 2%;
+}
+.cc-server img{
+    width: 40%;
+    padding-left: 30%;
+}
+.hr-server{
+    background-color: #b5d3ca;
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    margin-left: 11%;
+    margin-top: 2%; 
+}
+.hr-server img{
+    width: 40%;
+    padding-left: 23%;
+}
+.lc-server{
+    background-color: #b5d3ca;
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    margin-left: 11%;
+    margin-top: 2%; 
+}
+.lc-server img{
+    width: 60%;
+    padding-left: 23%;
+}
+
+.blog{
+    text-decoration: none;
+    color: black;
+}
+.blog h5{
+    font-size: 25px;
+    height: 10px;
+}
+.p-5 p{
+    font-size: 17px;
+    color: rgb(58, 56, 56);
+}
+.practice-btn{
+    text-decoration: none;
+    color: red;
+    font-size: 17px;
+}
+.cp-server-div1{
+    display: flex;
+   
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+ /*END CP Server style*/ 
