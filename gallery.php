@@ -7,6 +7,7 @@ require_once("header.php");
              $query=mysqli_query($connect,$readData);
             
 ?>
+
 <!-- GALLARY SECTION START -->
 <div class="galLarySection  p-5">
             <div class="container">
