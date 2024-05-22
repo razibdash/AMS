@@ -51,7 +51,7 @@ require_once("header.php");
                                                 </div>
                                                 <div class="p-5">
                                                     <div class="p-1">
-                                                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?php echo $fname." ".$lname ?></h5>
+                                                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white"><?php echo $fname." ".$lname ?></h5>
                                                     </div>
                                                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><?php echo $bio ?></p>
 
