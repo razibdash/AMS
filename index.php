@@ -239,7 +239,7 @@
 <!-- Success Story START -->
   <div class="success-story ">
       <div class="text-story">
-            <h1 class="text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">MU's <span class="text-blue-800 bold">Achievement</span></h1>
+            <h1 class="text-center mt-10 text-black-500 font-extrabold  dark:text-black-400 text-4xl">MU's <span class="text-blue-800 bold">Achievement</span></h1>
             <p class="font-normal text-center text-gray-500 dark:text-gray-400">Honoring Our Heritage: The Success Story of Our University</p>
       </div>
       <div class="success-card flex justify-center items-center flex-wrap">

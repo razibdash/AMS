@@ -720,12 +720,10 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 2%;
-    margin-left: 11%;
     margin-top: 2%;
 }
 .cp-img{
     width: 60%;
-    padding-left: 18%;
 }
 .cc-server{
     background-color: #b5d3ca;
@@ -734,12 +732,12 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 2%;
-    margin-left: 11%;
+    
     margin-top: 2%;
 }
 .cc-server img{
     width: 40%;
-    padding-left: 30%;
+
 }
 .hr-server{
     background-color: #b5d3ca;
@@ -748,12 +746,11 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 2%;
-    margin-left: 11%;
+  
     margin-top: 2%; 
 }
 .hr-server img{
     width: 40%;
-    padding-left: 23%;
 }
 .lc-server{
     background-color: #b5d3ca;
@@ -762,12 +759,11 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 2%;
-    margin-left: 11%;
     margin-top: 2%; 
 }
 .lc-server img{
     width: 60%;
-    padding-left: 23%;
+
 }
 
 .blog{
