@@ -48,7 +48,7 @@ Alumni Management System using PHP & MySql
 </ul>
 
 <div>
-  <img  src="image/usersD.png">
+  <img  src="image/fullpage.png">
 </div>
 
 <h1>How to Setup</h1>
