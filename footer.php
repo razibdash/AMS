@@ -22,9 +22,11 @@
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
+                                <!-- this is facebook line -->
                                 <a href="https://www.facebook.com/metropolitanuniversity" class="hover:underline ">Facebook</a>
                             </li>
                             <li>
+                                <!-- this is linkedln link -->
                                 <a href="https://www.linkedin.com/school/metrouni-edu-bd/" class="hover:underline">Linkedin</a>
                             </li>
                         </ul>

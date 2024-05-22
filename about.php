@@ -21,7 +21,7 @@ require_once("header.php");
                     </div>
                   <div class="content-one p-4 ">
                     <h1 class="text-lg mb-2 text-black-500 text-2xl font-extrabold md:text-xl dark:text-black-400">Officers and Elections</h1>
-                    <p class="mb-6 font-normal text-gray-500 dark:text-gray-400">The officers of the Association shall be classified into two categories: elected and appointed. The offices of the President and the Executive Secretary shall be filled by election and only degree/diploma holders of IUBAT University shall qualify to be elected to these positions.</p>
+                    <p class="mb-6 font-normal text-gray-500 dark:text-gray-400">The officers of the Association shall be classified into two categories: elected and appointed. The offices of the President and the Executive Secretary shall be filled by election and only degree/diploma holders of Metopolitan University shall qualify to be elected to these positions.</p>
                   </div>
               </div>
           </div>
