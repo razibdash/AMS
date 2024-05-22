@@ -9,13 +9,8 @@
             </svg>
          </button>
         <a href="admin.php" class="flex ms-2 md:me-24">
-<<<<<<< HEAD
           <img src="../image/mulogo.png" class="h-12 mt-1" alt="Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> Alumni</span>
-=======
-          <img src="../image/logo.png" class="h-12 mt-1" alt="Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MU Alumni</span>
->>>>>>> cb723a2 (test)
         </a>
       </div>
 
