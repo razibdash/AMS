@@ -160,7 +160,7 @@
             <div class="container container-lg container-md container-sm mx-auto">
                 <div class="job-section-heading">
                 <h1 class=" text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">Job For <span class="text-blue-800 bold">Fresher</span></h1>
-                <p class="mb-3 w-58 m-auto text-center text-gray-500 dark:text-gray-400">Discover entry-level positions perfect for fresh graduates eager to dive into career path</p>
+                <p class="mb-3 w-58 m-auto text-center text-gray-500 dark:text-gray-400">Discover entry-level positions perfect for fresh graduates eager to dive into career path</p>
                 </div>
                 <div class="job-card">
                     <!-- job ONE -->

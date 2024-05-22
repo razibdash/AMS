@@ -10,7 +10,7 @@
               <path fill-rule="evenodd" d="M10 15.5a5.5 5.5 0 1 1 11 0 5.5 5.5 0 0 1-11 0Zm6.5-1.5a1 1 0 1 0-2 0v1.5a1 1 0 0 0 .293.707l1 1a1 1 0 0 0 1.414-1.414l-.707-.707V14Z" clip-rule="evenodd"/>
             </svg>
 
-            <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Check Yo</span>ur Id</h1>
+            <h1 class="mb-4 text-2xl text-center font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Check Yo</span>ur Id</h1>
             <?php
               require("config/configer.php");
                if(isset($_POST['studentId'])){
@@ -33,7 +33,7 @@
                         }
                       
                     }else{
-                       echo "Wrong id ! try Again ?";
+                       echo "<p class='text-red-400 '>Wrong ID Try Again?</p>";
                     }
                   }else{
                     echo"Enter Your ID";
