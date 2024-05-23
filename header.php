@@ -15,7 +15,7 @@
 <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-50">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="index.php" class="flex items-center space-x-1 rtl:space-x-reverse">
-      <img src="image/mulogo.png" class="h-12 mt-1 mr-2" alt="Flowbite Logo" />
+      <img src="image/mulogo.png" class="h-12 mt-1 mr-1" alt="Flowbite Logo" />
       <span class="self-center mt-1 text-2xl font-semibold whitespace-nowrap dark:text-white">Alumni</span>
   </a>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
