@@ -6,7 +6,7 @@ require_once("header.php");
         <div class="contact-us mt-10  container-md">
             <div class="contact-heading">
                     <h1 class="text-center m-0 text-black-500 font-extrabold  dark:text-black-400 text-4xl">Contact <span class="text-blue-800 bold">Us</span></h1>
-                            <p class="font-normal text-center text-gray-500 dark:text-gray-400">Contact us anythime.</p>
+                            <p class="font-normal text-center text-gray-500 dark:text-gray-400">Contact Us Anythime.</p>
             </div>
             <div class="map-mail flex justify-center ">
                 <div class="map-box mt-5">
@@ -15,7 +15,7 @@ require_once("header.php");
                                 <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
                             </svg>
                             <h1 class="font-bold text-gray-600 mt-3 dark:text-gray-700">Our Address</h1>
-                            <p class="font-normal text-gray-500 dark:text-gray-400">Academic Building, MU, Room No #307</p>
+                            <p class="font-normal text-gray-500 dark:text-gray-400">Admin Building, MU</p>
                     </div>
                     <div class="map-insert mt-5">
                         <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0567059008013!2d91.97044227515443!3d24.930138077883875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750552bc71c899d%3A0x804e438bcc32b390!2sMetropolitan%20University%20Sylhet!5e0!3m2!1sen!2sbd!4v1714243771016!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
@@ -37,7 +37,7 @@ require_once("header.php");
                                 </svg>
 
                                     <h1 class="font-bold mt-3 text-gray-600 dark:text-gray-700">Call Us</h1>
-                                    <p class="font-normal text-gray-500 dark:text-gray-400">01791830</p>
+                                    <p class="font-normal text-gray-500 dark:text-gray-400">017918303764</p>
                             </div>
                     </div>
                     <div class="contact-form p-5 m-3 bg-white h-auto rounded-lg shadow-lg">                
@@ -54,7 +54,7 @@ require_once("header.php");
                                 </div>
                                 <div class="mb-6">
                                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Email address</label>
-                                    <input type="email" id="email" class="rounded border border-gray w-full" placeholder="abc@company.com" required />
+                                    <input type="email" id="email" class="rounded border border-gray w-full" placeholder="mu@company.com" required />
                                 </div> 
                             
                                 <div class="mb-6">
