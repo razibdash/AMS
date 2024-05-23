@@ -63,7 +63,7 @@
                             <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
                         </svg>
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-black-900 dark:text-black">Preamble</h5>
+                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-black-900 dark:text-black">Preamble.</h5>
                         </a>
                         <p class="mb-3 p-4 font-normal text-gray-500 dark:text-gray-500">
                             We, the Alumni of the MU—International University of Business Agriculture and Technology, develop mutual interest among ourselves, establish mutually beneficial relations between MU and its Alumni, and promote the interests of MU, do hereby form into an Association and adopt this constitution.</p>
@@ -91,7 +91,7 @@
                 <div class="gallary-content">
                     <div class="gallary-heading">
                     <h1 class="mb-4 mt-6 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark">Gal<span class="text-blue-800 bold">lery</span></h1>
-                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Discover inspiration around every corner in our MU World</p>
+                <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Discover inspiration around every corner in our "MU" World</p>
                     </div>
                 </div>
                 <div class="gallary-images-section">   
