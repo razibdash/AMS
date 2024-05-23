@@ -18,7 +18,7 @@ require_once("aside.php");
         <div class="add-id">
         <div class="title bg-sky-900 mb-5 p-5 rounded-lg shadow-2xl">
                   
-                  <h1 class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-5xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">ADD </span>Alumni ID</h1>
+                  <h1 class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-5xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Add </span>Alumni ID</h1>
                   
 
                </div>
