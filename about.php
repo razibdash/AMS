@@ -17,7 +17,7 @@ require_once("header.php");
               <div class="content">
                     <div class="content-one p-4">
                         <h1 class="text-lg mb-2 text-black-500 text-2xl font-extrabold md:text-xl dark:text-black-400">Executive Committee</h1>
-                        <p class="mb-6 font-normal text-gray-500 dark:text-gray-400">The Executive Committee shall consist of the Executive Secretary, the Finance Secretary, the Auditing Secretary, the Business Secretary, and the Press Secretary. The President shall serve as ex-officio member of the Executive Committee. The Executive Committee shall report to the Board of Managers.</p>
+                        <p class="mb-6 font-normal text-gray-500 dark:text-gray-400">The Executive Committee shall consist of the Executive Secretary, the Finance Secretary, the Auditing Secretary, the Business Secretary, and the Press Secretary. The President shall serve as ex-officio member of the Executive Committee. The Executive Committee shall report to the Board of Managers..</p>
                     </div>
                   <div class="content-one p-4 ">
                     <h1 class="text-lg mb-2 text-black-500 text-2xl font-extrabold md:text-xl dark:text-black-400">Officers and Elections</h1>
