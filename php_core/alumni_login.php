@@ -3,11 +3,7 @@
 require("../config/configer.php");
 
 session_start();
-<<<<<<< HEAD
 $error= "invalid Student ID or password";
-=======
- $error="";
->>>>>>> cb723a2 (test)
 if(empty($_SESSION['user_id'])){
 
 if(isset($_POST['id']) && isset($_POST['password']) ){
@@ -25,10 +21,7 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
       $num=mysqli_num_rows($sql_query);
 
      if($num==1){
-<<<<<<< HEAD
       
-=======
->>>>>>> cb723a2 (test)
         while($data=mysqli_fetch_assoc($sql_query)){
 
              
@@ -43,20 +36,12 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
                   }
 
             }else{
-<<<<<<< HEAD
                   if(!headers_sent()){
                    
                     header("Location:../alumni_login.php?error=$error");
                 }else{
                  
                     echo '<script type="text/javascript">window.location.href="../alumni_login.php?error"</script>';
-=======
-                 $error= "invalid Student ID or password";
-                  if(!headers_sent()){
-                    header("Location:../alumni_login.php?error=$error");
-                }else{
-                    echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
->>>>>>> cb723a2 (test)
                     
                 }
              }
@@ -65,17 +50,11 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
       }else{
         echo "Invalid Id or Password";
         if(!headers_sent()){
-<<<<<<< HEAD
          
           header("Location:../alumni_login.php?error=$error");
         }else{
          
             echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=Invalid Id or Password"</script>';
-=======
-          header("Location:../alumni_login.php?error=$error");
-        }else{
-            echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
->>>>>>> cb723a2 (test)
             
         }
     } 
@@ -89,24 +68,8 @@ if(isset($_POST['id']) && isset($_POST['password']) ){
       if(!headers_sent()){
         header("Location:../alumni_login.php?error=$error");
     }else{
-<<<<<<< HEAD
         echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=Invalid Id or Password"</script>';
         
     }
 }
 ?>
-
-
-
-
-
-
-
-
-=======
-        echo '<script type="text/javascript">window.location.href="../alumni_login.php?error=$error"</script>';
-        
-    }
-}
-?>
->>>>>>> cb723a2 (test)

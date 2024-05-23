@@ -46,10 +46,10 @@ require_once("header.php");
                            <div class="search-result">
                                                 <div class="max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                         <a href="#">
-                                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?php echo $job_title;?></h5>
+                                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white"><?php echo $job_title;?></h5>
                                         </a>
-                                        <div class="job-describtion">
-                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">\<?php echo $des;?></p>
+                                        <div class="job-describtion text-white">
+                                        <p class="mb-3 font-normal text-white-700 dark:text-white-800">\<?php echo $des;?></p>
                                         </div>
                                         <div class="job-requirment">
                                         <ul class="space-y-4 text-left text-gray-500 dark:text-gray-400">

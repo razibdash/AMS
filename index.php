@@ -69,6 +69,7 @@
                             We, the Alumni of the MU—International University of Business Agriculture and Technology, develop mutual interest among ourselves, establish mutually beneficial relations between MU and its Alumni, and promote the interests of MU, do hereby form into an Association and adopt this constitution.</p>
                     
                     </div>
+
             </div>
             <div class="preamble m-4">
             <div class="max-w-lg p-6 bg-white rounded-lg shadow-lg dark:bg-white-800 dark:border-gray-700">
@@ -159,7 +160,7 @@
             <div class="container container-lg container-md container-sm mx-auto">
                 <div class="job-section-heading">
                 <h1 class=" text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">Job For <span class="text-blue-800 bold">Fresher</span></h1>
-                <p class="mb-3 w-58 m-auto text-center text-gray-500 dark:text-gray-400">Discover entry-level positions perfect for fresh graduates eager to dive into career path</p>
+                <p class="mb-3 w-58 m-auto text-center text-gray-500 dark:text-gray-400">Discover entry-level positions perfect for fresh graduates eager to dive into career path</p>
                 </div>
                 <div class="job-card">
                     <!-- job ONE -->
@@ -189,26 +190,26 @@
                                 <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                 </svg>
-                                <span><?php echo $location;?></span>
+                                <span class="text-black-900 dark:text-black"><?php echo $location;?></span>
                             </li>
 
                             <li class="flex items-center space-x-3 rtl:space-x-reverse">
                                 <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                 </svg>
-                                <span>Experiance<span class="font-semibold text-gray-900 dark:text-white"><?php echo $experiance ;?></span></span>
+                                <span>Experiance: <span class="font-semibold text-black-900 dark:text-black"><?php echo $experiance ;?></span></span>
                             </li>
                             <li class="flex items-center space-x-3 rtl:space-x-reverse">
                                 <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                 </svg>
-                                <span>Salary: <span class="font-semibold text-gray-900 dark:text-white"><?php echo $salary;?></span></span>
+                                <span>Salary: <span class="font-semibold text-black-900 dark:text-black"><?php echo $salary;?></span></span>
                             </li>
                             <li class="flex items-center space-x-3 rtl:space-x-reverse">
                                 <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                 </svg>
-                                <span>Employment status: <span class="font-semibold text-gray-900 dark:text-white"><?php echo $employment_status;?></span></span>
+                                <span>Employment status: <span class="font-semibold text-black-900 dark:text-black"><?php echo $employment_status;?></span></span>
                             </li>
                         </ul>
                         </div>
@@ -227,6 +228,10 @@
 
                 
                 </div>
+                <div class="more-button text-center">
+                    <a href="job.php" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 m-1 ">see more</a>
+
+                    </div>
             </div>
         </div>
 <!-- JOB SECTION END -->
@@ -234,7 +239,7 @@
 <!-- Success Story START -->
   <div class="success-story ">
       <div class="text-story">
-            <h1 class="text-center  text-black-500 font-extrabold  dark:text-black-400 text-4xl">MU's <span class="text-blue-800 bold">Achievement</span></h1>
+            <h1 class="text-center mt-10 text-black-500 font-extrabold  dark:text-black-400 text-4xl">MU's <span class="text-blue-800 bold">Achievement</span></h1>
             <p class="font-normal text-center text-gray-500 dark:text-gray-400">Honoring Our Heritage: The Success Story of Our University</p>
       </div>
       <div class="success-card flex justify-center items-center flex-wrap">
@@ -315,7 +320,7 @@
                             </svg>
 
                                 <h1 class="font-bold mt-3 text-gray-600 dark:text-gray-700">Email Us</h1>
-                                <p class="font-normal text-gray-500 dark:text-gray-400">alumni@iubat.edu</p>
+                                <p class="font-normal text-gray-500 dark:text-gray-400">alumni@mu.edu</p>
                             </div>
                             <div class="icon w-80 m-4 text-center bg-white rounded-lg shadow-lg p-4">
                             <svg class="w-8 h-8 p-1 border border-4 border-blue-600 border-dotted rounded-full m-auto text-blue-600 dark:text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

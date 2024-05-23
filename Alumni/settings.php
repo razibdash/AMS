@@ -206,8 +206,6 @@
 
                                         <input type="number" step="0.01" min="1" max="4" name="cgpa"  id="visitors" value="<?php echo $cgpa ?>" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cgpa" required />
 
-                                        <input type="number" name="cgpa"  id="visitors" value="<?php echo $cgpa ?>" class="bg-white-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cgpa" required />
-
                                     </div>
                                 </div>
                                 <div class="mb-6">

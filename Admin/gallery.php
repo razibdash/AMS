@@ -17,7 +17,7 @@ require_once("aside.php");
      <div class="gallery">
                <div class="title bg-sky-900 mb-5 p-5 rounded-lg shadow-2xl">                 
                   <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Gall</span>ery</h1>
-                  <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Discover inspiration around every corner in our MU World.</p>
+                  <p class="text-lg font-normal text-white-700 lg:text-xl dark:text-white-700">Discover inspiration around every corner in our MU World.</p>
 
                </div>
         <div class="add-photo">
@@ -126,10 +126,6 @@ require_once("aside.php");
                    <p><?php echo $des ?></p>
                 </td>
                 <td class="px-6 py-4 ">
-<<<<<<< HEAD
-=======
-                    <a href="#" class=" font-medium bg-blue-600 px-5 py-2 rounded-lg text-white dark:text-white-500 hover:underline">Edit</a>
->>>>>>> cb723a2 (test)
                     <a href="../php_core/deletePhoto.php?del=<?php echo $id ?>" class="font-medium bg-red-600 mt-5 text-white dark:text-white-600 inline-block p-2 rounded-lg  hover:underline">Remove</a>
                 </td>
             </tr>
