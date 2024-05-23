@@ -10,7 +10,7 @@
               <path fill-rule="evenodd" d="M10 15.5a5.5 5.5 0 1 1 11 0 5.5 5.5 0 0 1-11 0Zm6.5-1.5a1 1 0 1 0-2 0v1.5a1 1 0 0 0 .293.707l1 1a1 1 0 0 0 1.414-1.414l-.707-.707V14Z" clip-rule="evenodd"/>
             </svg>
 
-            <h1 class="mb-4 text-center text-2xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Alumni</span>Login</h1>
+            <h1 class="mb-4 text-center text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-4xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Alumni</span> Login</h1>
 
               <form class="max-w-sm mx-auto" action="php_core/alumni_login.php" method="POST">
               <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Student ID</label>
